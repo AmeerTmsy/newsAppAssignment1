@@ -5,8 +5,15 @@ const urlApi = ''
 const body = document.getElementById('body');
 
 //  ----------- getting data from the API --------------  //
-fetch('https://newsapi.org/v2/everything?q=tesla&from=2024-04-09&sortBy=publishedAt&apiKey=e2ff5300c1cf466ab243830cc4715b34')
-.then(response => response.json())
+const apiKey = "e2ff5300c1cf466ab243830cc4715b34"
+let url = `https://newsapi.org/v2/everything?q=tesla&from=2024-04-09&sortBy=publishedAt&apiKey=${apiKey}`;
+fetch(url)
+.then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    return response.json();
+})
 .then(data => {
     for(var i=0; i<10; i++){
         // console.log(data);
