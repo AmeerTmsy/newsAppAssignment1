@@ -1,11 +1,11 @@
 
 
-const urlApi = 'https://newsapi.org/v2/everything?q=tesla&from=2024-04-09&sortBy=publishedAt&apiKey=e2ff5300c1cf466ab243830cc4715b34'
+const urlApi = ''
 
 const body = document.getElementById('body');
 
 //  ----------- getting data from the API --------------  //
-fetch(urlApi)
+fetch('https://newsapi.org/v2/everything?q=tesla&from=2024-04-09&sortBy=publishedAt&apiKey=e2ff5300c1cf466ab243830cc4715b34')
 .then(response => response.json())
 .then(data => {
     for(var i=0; i<10; i++){
