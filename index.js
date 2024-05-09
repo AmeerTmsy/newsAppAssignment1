@@ -1,6 +1,6 @@
 
 
-const urlApi = 'https://newsapi.org/v2/everything?q=tesla&from=2024-04-01&sortBy=publishedAt&apiKey=ec70ef23cbbe4960ac37d3041e26abf3'
+const urlApi = 'https://newsapi.org/v2/everything?q=tesla&from=2024-04-09&sortBy=publishedAt&apiKey=e2ff5300c1cf466ab243830cc4715b34'
 
 const body = document.getElementById('body');
 
